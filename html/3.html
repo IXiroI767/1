@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Форма обратной связи</title>
+</head>
+<body>
+    <h2>Форма обратной связи</h2>
+    <form action="#" method="post">
+        <div>
+            <label for="name">Имя</label><br>
+            <input type="text" id="name" name="name">
+        </div>
+        <br>
+        <div>
+            <label for="email">Email</label><br>
+            <input type="email" id="email" name="email">
+        </div>
+        <br>
+        <div>
+            <label for="age">Возраст</label><br>
+            <input type="number" id="age" name="age">
+        </div>
+        <br>
+        <div>
+            <label>Пол</label><br>
+            <input type="radio" id="gender_male" name="gender" value="male">
+            <label for="gender_male">Мужской</label><br>
+            <input type="radio" id="gender_female" name="gender" value="female">
+            <label for="gender_female">Женский</label>
+        </div>
+        <br>
+        <div>
+            <input type="checkbox" id="notifications" name="notifications">
+            <label for="notifications">Хочет ли получать уведомления</label>
+        </div>
+        <br>
+        <div>
+            <label for="city">Город</label><br>
+            <select id="city" name="city">
+                <option value="moscow">Москва</option>
+                <option value="spb">Санкт-Петербург</option>
+                <option value="novosibirsk">Новосибирск</option>
+                <option value="ekb">Екатеринбург</option>
+                <option value="kaliningrad">Калининград</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <label for="about">О себе</label><br>
+            <textarea id="about" name="about" rows="5" cols="40"></textarea>
+        </div>
+        <br>
+        <button type="submit">Отправить</button>
+    </form>
+</body>
+</html>
