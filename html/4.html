@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сайт с семантической разметкой</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            min-height: 100vh;
+            display: grid;
+            grid-template-areas:
+                "header header"
+                "main aside"
+                "footer footer";
+            grid-template-columns: 1fr 250px;
+            grid-template-rows: auto 1fr auto;
+        }
+
+        header {
+            grid-area: header;
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        aside {
+            grid-area: aside;
+            background-color: #ecf0f1;
+            padding: 20px;
+            border-left: 1px solid #bdc3c7;
+        }
+
+        main {
+            grid-area: main;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        section {
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+        }
+
+        footer {
+            grid-area: footer;
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        Это header
+    </header>
+
+    <main>
+        <section>Это секция 1</section>
+        <section>Это секция 2</section>
+        <section>Это секция 3</section>
+    </main>
+
+    <aside>
+        Это aside
+    </aside>
+
+    <footer>
+        Это footer
+    </footer>
+
+</body>
+</html>
